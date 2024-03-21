@@ -1,0 +1,173 @@
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Color de fondo más tenue */
+    color: #000000; /* Color de texto */
+}
+
+main {
+    padding: 30px;
+}
+
+header {
+    background-color: #f0daeb; /* Azul más tenue para confianza y profesionalidad */
+    color: #333;
+    text-align: center;
+    padding: 30 0 30px 0;
+    position: relative; /* Hacemos que el contenedor sea relativo para posicionar la imagen */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1{
+    margin-bottom: 20px;
+    display: inline-block; /* Asegura que el título y la imagen estén en la misma línea */
+
+}
+
+header img {
+    display: inline-block; /* Asegura que la imagen se muestre en línea con el título */
+    max-width: 150px; /* Define el ancho máximo de la imagen */
+    height: auto; /* Permite que la altura de la imagen se ajuste automáticamente */
+    vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
+    margin-left: 50px; /* Agrega un margen a la izquierda de la imagen */
+    margin-right: 20px; /* Agrega un margen a la derecha de la imagen */
+}
+
+/*.logo {
+    width: 200px; 
+    height: auto;*/ /* Permite que la altura se ajuste automáticamente manteniendo la proporción */
+   /* margin-left: 10px; 
+}*/
+
+
+
+header img.logo {
+    max-width: 3000px; /* Establecer un ancho máximo para la imagen */
+    height:auto; /* Permitir que la altura se ajuste automáticamente manteniendo la proporción */
+}
+
+
+.logo {
+    max-width: 100%; /* Para que la imagen no se estire más allá de su tamaño natural */
+    height: auto; /* Para mantener la proporción de la imagen */
+    margin-left: 15px; /* Espacio entre el texto y la imagen */
+}
+
+@media (max-width: 767px) {
+    .text-md-right {
+        text-align: center !important; /* Centra la imagen en dispositivos móviles */
+    }
+
+    .logo {
+        margin-left: 0; /* Elimina el margen izquierdo en dispositivos móviles */
+        margin-top: 20px; /* Agrega espacio entre el texto y la imagen */
+    }
+}
+
+h1 {
+    font-size: 24px; /* Tamaño del texto del título */
+    white-space: nowrap; /* Evita que el título se divida en varias líneas */
+    overflow: hidden; /* Oculta el texto que se desborda */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos (...) si el texto es demasiado largo para mostrar */
+    color: #ad5590;
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 20px; /* Reduce el tamaño del título en dispositivos móviles si es necesario */
+    }
+}
+
+#registro-form ul {
+    list-style-type: none; /* Elimina las viñetas */
+    padding: 0; /* Elimina el relleno de la lista */
+}
+
+#registro-form li {
+    list-style: none; /* Elimina las viñetas */
+    margin-bottom: 10px; /* Agrega un espacio entre los elementos */
+}
+
+#registro-form button {
+    max-width: 200px;
+}
+
+section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section h2 {
+    text-align: center;
+    color: #ad5590; /* Azul más tenue */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li::before {
+    content: "•";
+    margin-right: 10px;
+}
+
+form input[type="email"],
+form button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+form button {
+    background-color: #974479; /* Tonos verdosos para resaltar el botón */
+    color: #fff;
+    cursor: pointer;
+    align-items: center;
+}
+
+form {
+    text-align:center; /* Alinea todo el contenido del formulario hacia la centro */
+}
+
+
+footer {
+    background-color: #C272AC; /* Azul más tenue */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+.enlace-boton-registro {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #974479; /* Tonos verdosos para resaltar el botón */
+    color: #fff;
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    border-radius: 5px; /* Agrega bordes redondeados */
+    transition: background-color 0.3s; /* Agrega una transición suave al cambiar el co  lor de fondo */
+}
+
+.enlace-boton-registro:hover {
+    background-color: #7B3963; /* Cambia el color de fondo al pasar el cursor sobre el botón */
+}
+
+#registro-form input[type="text"],
+#registro-form input[type="tel"],
+#registro-form input[type="email"] {
+    width: 300px; /* Establece el mismo ancho para todos los campos de texto */
+    border: 1px solid #ccc; /* Añade un borde alrededor de todos los campos */
+    padding: 8px; /* Agrega un relleno interno a todos los campos */
+    box-sizing: border-box; /* Incluye el borde y el relleno en el ancho total de los campos */
+    /* Ajusta el color de fondo y el color de texto para que coincidan con los otros campos */
+    background-color: #fff; /* Color de fondo blanco */
+    color: #333; /* Color de texto oscuro */
+}
