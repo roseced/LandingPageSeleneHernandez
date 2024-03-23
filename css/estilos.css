@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #f9f9f9; /* Color de fondo más tenue */
     color: #000000; /* Color de texto */
+    
 }
 
 main {
@@ -88,6 +89,7 @@ h1 {
 #registro-form li {
     list-style: none; /* Elimina las viñetas */
     margin-bottom: 10px; /* Agrega un espacio entre los elementos */
+    
 }
 
 #registro-form button {
@@ -130,7 +132,7 @@ form button {
 }
 
 form {
-    text-align:center; /* Alinea todo el contenido del formulario hacia la centro */
+    align-items: center; /* Alinea todo el contenido del formulario hacia la centro */
 }
 
 
