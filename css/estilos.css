@@ -132,7 +132,8 @@ form button {
 }
 
 form {
-    align-items: center; /* Alinea todo el contenido del formulario hacia la centro */
+    text-align: center; 
+    align-items: center;/* Alinea todo el contenido del formulario hacia la centro */
 }
 
 
